@@ -1,0 +1,8 @@
+Requirements:
+
+Python 3.7
+PIP
+
+From PIP:
+- pywin32
+- pypiwin32
