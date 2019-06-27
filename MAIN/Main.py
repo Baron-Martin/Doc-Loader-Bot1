@@ -33,7 +33,8 @@ list_of_files = glob.glob(subtobeloaded)
 oldest_file = max(list_of_files, key=os.path.getctime)
 print (oldest_file)
 shutil.move(oldest_file, datasheetloading)
-logging.info("Oldest File in to_be_loaded folder has been moved to Datasheet Loading")
+logging.info("Oldest File in to_be_loaded folder has been moved to Datasheet Loading:")
+logging.info(oldest_file)
 
 # Create Loop
 ## used to allow the program to retry the process if there were over 2000 articles on the previous run
@@ -45,6 +46,7 @@ while restart < 10:
         wb.Close(False)
         xlApp.Quit()
         del xlApp
+        logging.info("Closed Previous COM Instance If on 2nd or above passthrough.")
         xlApp = win32com.client.DispatchEx('Excel.Application')
         xlsPath = os.path.expanduser('M:\GlobalImageManagement\Datasheet Loading New\Merge Spreadsheet.xlsm')
         wb = xlApp.Workbooks.Open(Filename=xlsPath)
@@ -82,7 +84,7 @@ while restart < 10:
 
         else:
             if len(os.listdir(tobeloaded) ) == 0:
-                logging.info("All Load files Loaded")
+                logging.info("All Possible Load files Loaded")
                 restart = 11
         
             else:
@@ -90,7 +92,8 @@ while restart < 10:
                 oldest_file = max(list_of_files, key=os.path.getctime)
                 print (oldest_file)
                 shutil.move(oldest_file, datasheetloading)
-                logging.info("Gathered another Load File")
+                logging.info("Gathered another Load File:")
+                logging.info(oldest_file)
             
 
 
@@ -144,7 +147,7 @@ except:
             shutil.move(logdir,dirname)
 
         except:
-            print ("Ignore this message")
+            logging.info("Log File Moved to Completed Folder")
 
 
 
@@ -166,7 +169,7 @@ except:
             shutil.move(logdir,dirname2)
 
         except:
-            print ("Ignore this message")
+            logging.info("Log File Moved to Completed Folder")
 
 
 # BOT Email
