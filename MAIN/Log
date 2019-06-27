@@ -442,3 +442,199 @@ INFO: 2019-06-19 14:33:14,664: Completed Load Folder Made
 INFO: 2019-06-19 14:33:14,679: Individual and Merged Load Files moved to Complete Folder
 INFO: 2019-06-19 14:33:14,695: Individual and Merged Load Files moved to Complete Folder
 INFO: 2019-06-19 14:33:14,701: Individual and Merged Load Files moved to Complete Folder
+INFO: 2019-06-26 14:50:44,600: Log File Created
+INFO: 2019-06-26 14:51:49,950: Log File Created
+INFO: 2019-06-26 14:51:50,003: Oldest File in to_be_loaded folder has been moved to Datasheet Loading
+INFO: 2019-06-26 14:51:57,067: Merger Ran
+INFO: 2019-06-26 14:51:57,128: Clean_Sort Ran
+INFO: 2019-06-26 14:51:58,167: Article Number Check Ran
+INFO: 2019-06-26 14:51:58,183: All Load files Loaded
+INFO: 2019-06-26 14:51:58,186: Moved any offending Load Files from /temp back to to_be_loaded
+INFO: 2019-06-26 14:51:58,186: SaveAs Ran
+INFO: 2019-06-26 14:51:58,201: Completed Load Folder Made
+INFO: 2019-06-26 15:16:28,391: Log File Created
+INFO: 2019-06-26 15:16:57,091: Log File Created
+INFO: 2019-06-26 15:16:57,126: Oldest File in to_be_loaded folder has been moved to Datasheet Loading
+INFO: 2019-06-26 15:17:00,173: Merger Ran
+INFO: 2019-06-26 15:17:00,205: Clean_Sort Ran
+INFO: 2019-06-26 15:17:01,210: Article Number Check Ran
+INFO: 2019-06-26 15:17:03,237: Gathered another Load File
+INFO: 2019-06-26 15:17:07,453: Merger Ran
+INFO: 2019-06-26 15:17:07,467: Clean_Sort Ran
+INFO: 2019-06-26 15:17:07,496: Article Number Check Ran
+INFO: 2019-06-26 15:17:07,496: All Load files Loaded
+INFO: 2019-06-26 15:17:07,499: Moved any offending Load Files from /temp back to to_be_loaded
+INFO: 2019-06-26 15:17:07,984: SaveAs Ran
+INFO: 2019-06-26 15:17:08,001: Completed Load Folder Made
+INFO: 2019-06-26 15:17:09,902: Email Sent to R Content Technical Inbox
+INFO: 2019-06-26 16:06:27,908: Log File Created
+INFO: 2019-06-26 16:06:27,962: Oldest File in to_be_loaded folder has been moved to Datasheet Loading
+INFO: 2019-06-26 16:06:29,948: Merger Ran
+INFO: 2019-06-26 16:06:29,987: Clean_Sort Ran
+INFO: 2019-06-26 16:06:30,990: Article Number Check Ran
+INFO: 2019-06-26 16:06:32,953: Gathered another Load File
+INFO: 2019-06-26 16:06:35,138: Merger Ran
+INFO: 2019-06-26 16:06:35,151: Clean_Sort Ran
+INFO: 2019-06-26 16:06:36,132: Article Number Check Ran
+INFO: 2019-06-26 16:06:36,132: All Load files Loaded
+INFO: 2019-06-26 16:06:36,135: Moved any offending Load Files from /temp back to to_be_loaded
+INFO: 2019-06-26 16:06:38,662: Email Sent to R Content Technical Inbox
+INFO: 2019-06-26 16:07:37,427: Log File Created
+INFO: 2019-06-26 16:07:37,484: Oldest File in to_be_loaded folder has been moved to Datasheet Loading
+INFO: 2019-06-26 16:07:39,122: Merger Ran
+INFO: 2019-06-26 16:07:39,151: Clean_Sort Ran
+INFO: 2019-06-26 16:07:40,126: Article Number Check Ran
+INFO: 2019-06-26 16:07:42,063: Gathered another Load File
+INFO: 2019-06-26 16:07:44,416: Merger Ran
+INFO: 2019-06-26 16:07:44,434: Clean_Sort Ran
+INFO: 2019-06-26 16:07:45,416: Article Number Check Ran
+INFO: 2019-06-26 16:07:45,417: All Load files Loaded
+INFO: 2019-06-26 16:07:45,417: Moved any offending Load Files from /temp back to to_be_loaded
+INFO: 2019-06-26 16:07:47,969: Email Sent to R Content Technical Inbox
+INFO: 2019-06-27 10:54:01,898: Log File Created
+INFO: 2019-06-27 10:54:01,920: Oldest File in to_be_loaded folder has been moved to Datasheet Loading
+INFO: 2019-06-27 10:58:17,378: Log File Created
+INFO: 2019-06-27 10:58:17,429: Oldest File in to_be_loaded folder has been moved to Datasheet Loading
+INFO: 2019-06-27 10:58:30,110: Merger Ran
+INFO: 2019-06-27 10:58:30,154: Clean_Sort Ran
+INFO: 2019-06-27 10:58:32,139: Article Number Check Ran
+INFO: 2019-06-27 10:58:34,165: Gathered another Load File
+INFO: 2019-06-27 10:58:38,899: Merger Ran
+INFO: 2019-06-27 10:58:38,965: Clean_Sort Ran
+INFO: 2019-06-27 10:58:39,955: Article Number Check Ran
+INFO: 2019-06-27 10:58:39,956: All Load files Loaded
+INFO: 2019-06-27 10:58:39,957: Moved any offending Load Files from /temp back to to_be_loaded
+INFO: 2019-06-27 11:02:12,439: Log File Created
+INFO: 2019-06-27 11:02:12,471: Oldest File in to_be_loaded folder has been moved to Datasheet Loading
+INFO: 2019-06-27 11:02:15,421: Merger Ran
+INFO: 2019-06-27 11:02:15,458: Clean_Sort Ran
+INFO: 2019-06-27 11:02:16,439: Article Number Check Ran
+INFO: 2019-06-27 11:02:18,394: Gathered another Load File
+INFO: 2019-06-27 11:02:23,098: Merger Ran
+INFO: 2019-06-27 11:02:23,178: Clean_Sort Ran
+INFO: 2019-06-27 11:02:24,160: Article Number Check Ran
+INFO: 2019-06-27 11:02:24,161: All Load files Loaded
+INFO: 2019-06-27 11:02:24,161: Moved any offending Load Files from /temp back to to_be_loaded
+INFO: 2019-06-27 11:04:17,401: Log File Created
+INFO: 2019-06-27 11:04:17,438: Oldest File in to_be_loaded folder has been moved to Datasheet Loading
+INFO: 2019-06-27 11:04:21,447: Merger Ran
+INFO: 2019-06-27 11:04:21,487: Clean_Sort Ran
+INFO: 2019-06-27 11:04:22,471: Article Number Check Ran
+INFO: 2019-06-27 11:04:24,482: Gathered another Load File
+INFO: 2019-06-27 11:04:35,176: Merger Ran
+INFO: 2019-06-27 11:04:35,260: Clean_Sort Ran
+INFO: 2019-06-27 11:04:36,248: Article Number Check Ran
+INFO: 2019-06-27 11:04:36,250: All Load files Loaded
+INFO: 2019-06-27 11:04:36,250: Moved any offending Load Files from /temp back to to_be_loaded
+INFO: 2019-06-27 11:07:37,964: Log File Created
+INFO: 2019-06-27 11:07:38,020: Oldest File in to_be_loaded folder has been moved to Datasheet Loading
+INFO: 2019-06-27 11:07:41,027: Merger Ran
+INFO: 2019-06-27 11:07:41,047: Clean_Sort Ran
+INFO: 2019-06-27 11:07:42,029: Article Number Check Ran
+INFO: 2019-06-27 11:07:44,016: Gathered another Load File
+INFO: 2019-06-27 11:08:01,778: Merger Ran
+INFO: 2019-06-27 11:08:01,800: Clean_Sort Ran
+INFO: 2019-06-27 11:08:02,785: Article Number Check Ran
+INFO: 2019-06-27 11:08:02,787: All Load files Loaded
+INFO: 2019-06-27 11:08:02,787: Moved any offending Load Files from /temp back to to_be_loaded
+INFO: 2019-06-27 11:10:42,409: Log File Created
+INFO: 2019-06-27 11:10:42,523: Oldest File in to_be_loaded folder has been moved to Datasheet Loading
+INFO: 2019-06-27 11:10:45,732: Merger Ran
+INFO: 2019-06-27 11:10:45,779: Clean_Sort Ran
+INFO: 2019-06-27 11:10:46,763: Article Number Check Ran
+INFO: 2019-06-27 11:10:48,769: Gathered another Load File
+INFO: 2019-06-27 11:10:52,863: Merger Ran
+INFO: 2019-06-27 11:10:52,950: Clean_Sort Ran
+INFO: 2019-06-27 11:10:53,939: Article Number Check Ran
+INFO: 2019-06-27 11:10:53,940: All Load files Loaded
+INFO: 2019-06-27 11:10:53,941: Moved any offending Load Files from /temp back to to_be_loaded
+INFO: 2019-06-27 11:10:54,696: SaveAs Ran
+INFO: 2019-06-27 11:10:54,705: Completed Load Folder Made
+INFO: 2019-06-27 11:30:46,797: Log File Created
+INFO: 2019-06-27 11:30:46,837: Oldest File in to_be_loaded folder has been moved to Datasheet Loading
+INFO: 2019-06-27 11:30:50,091: Merger Ran
+INFO: 2019-06-27 11:30:50,145: Clean_Sort Ran
+INFO: 2019-06-27 11:30:51,149: Article Number Check Ran
+INFO: 2019-06-27 11:30:53,149: Gathered another Load File
+INFO: 2019-06-27 11:30:59,149: Merger Ran
+INFO: 2019-06-27 11:30:59,241: Clean_Sort Ran
+INFO: 2019-06-27 11:31:00,234: Article Number Check Ran
+INFO: 2019-06-27 11:31:00,238: All Load files Loaded
+INFO: 2019-06-27 11:31:00,238: Moved any offending Load Files from /temp back to to_be_loaded
+INFO: 2019-06-27 11:31:01,017: SaveAs Ran
+INFO: 2019-06-27 11:32:09,739: Log File Created
+INFO: 2019-06-27 11:32:09,758: Oldest File in to_be_loaded folder has been moved to Datasheet Loading
+INFO: 2019-06-27 11:32:12,725: Merger Ran
+INFO: 2019-06-27 11:32:12,738: Clean_Sort Ran
+INFO: 2019-06-27 11:32:13,711: Article Number Check Ran
+INFO: 2019-06-27 11:32:15,652: Gathered another Load File
+INFO: 2019-06-27 11:32:21,093: Merger Ran
+INFO: 2019-06-27 11:32:21,119: Clean_Sort Ran
+INFO: 2019-06-27 11:32:22,088: Article Number Check Ran
+INFO: 2019-06-27 11:32:22,088: All Load files Loaded
+INFO: 2019-06-27 11:32:22,088: Moved any offending Load Files from /temp back to to_be_loaded
+INFO: 2019-06-27 11:32:22,914: SaveAs Ran
+INFO: 2019-06-27 11:32:22,929: Completed Load Folder Made
+INFO: 2019-06-27 11:34:20,031: Log File Created
+INFO: 2019-06-27 11:34:20,134: Oldest File in to_be_loaded folder has been moved to Datasheet Loading
+INFO: 2019-06-27 11:34:23,361: Merger Ran
+INFO: 2019-06-27 11:34:23,406: Clean_Sort Ran
+INFO: 2019-06-27 11:34:24,409: Article Number Check Ran
+INFO: 2019-06-27 11:34:26,357: Gathered another Load File
+INFO: 2019-06-27 11:34:30,893: Merger Ran
+INFO: 2019-06-27 11:34:30,959: Clean_Sort Ran
+INFO: 2019-06-27 11:34:31,931: Article Number Check Ran
+INFO: 2019-06-27 11:34:31,931: All Load files Loaded
+INFO: 2019-06-27 11:34:31,931: Moved any offending Load Files from /temp back to to_be_loaded
+INFO: 2019-06-27 11:34:32,856: SaveAs Ran
+INFO: 2019-06-27 11:35:55,848: Log File Created
+INFO: 2019-06-27 11:35:55,888: Oldest File in to_be_loaded folder has been moved to Datasheet Loading
+INFO: 2019-06-27 11:36:00,026: Merger Ran
+INFO: 2019-06-27 11:36:00,078: Clean_Sort Ran
+INFO: 2019-06-27 11:36:01,079: Article Number Check Ran
+INFO: 2019-06-27 11:36:03,054: Gathered another Load File
+INFO: 2019-06-27 11:36:07,870: Merger Ran
+INFO: 2019-06-27 11:36:07,969: Clean_Sort Ran
+INFO: 2019-06-27 11:36:08,960: Article Number Check Ran
+INFO: 2019-06-27 11:36:08,961: All Load files Loaded
+INFO: 2019-06-27 11:36:08,961: Moved any offending Load Files from /temp back to to_be_loaded
+INFO: 2019-06-27 11:36:09,677: SaveAs Ran
+INFO: 2019-06-27 11:36:09,693: Completed Load Folder Made
+INFO: 2019-06-27 11:36:09,706: Individual and Merged Load Files moved to Complete Folder
+INFO: 2019-06-27 11:36:09,721: Individual and Merged Load Files moved to Complete Folder
+INFO: 2019-06-27 11:36:09,737: Individual and Merged Load Files moved to Complete Folder
+INFO: 2019-06-27 11:36:12,334: Email Sent to R Content Technical Inbox
+INFO: 2019-06-27 11:36:48,330: Log File Created
+INFO: 2019-06-27 11:36:49,326: Oldest File in to_be_loaded folder has been moved to Datasheet Loading
+INFO: 2019-06-27 11:36:52,203: Merger Ran
+INFO: 2019-06-27 11:36:52,237: Clean_Sort Ran
+INFO: 2019-06-27 11:36:53,208: Article Number Check Ran
+INFO: 2019-06-27 11:36:55,183: Gathered another Load File
+INFO: 2019-06-27 11:36:58,845: Merger Ran
+INFO: 2019-06-27 11:36:58,934: Clean_Sort Ran
+INFO: 2019-06-27 11:36:59,932: Article Number Check Ran
+INFO: 2019-06-27 11:36:59,933: All Load files Loaded
+INFO: 2019-06-27 11:36:59,933: Moved any offending Load Files from /temp back to to_be_loaded
+INFO: 2019-06-27 11:37:00,755: SaveAs Ran
+INFO: 2019-06-27 11:37:00,772: Completed Load Folder Made
+INFO: 2019-06-27 11:37:00,787: Individual and Merged Load Files moved to Complete Folder
+INFO: 2019-06-27 11:37:00,799: Individual and Merged Load Files moved to Complete Folder
+INFO: 2019-06-27 11:37:00,816: Individual and Merged Load Files moved to Complete Folder
+INFO: 2019-06-27 11:37:03,066: Email Sent to R Content Technical Inbox
+INFO: 2019-06-27 11:38:30,689: Log File Created
+INFO: 2019-06-27 11:38:31,664: Oldest File in to_be_loaded folder has been moved to Datasheet Loading
+INFO: 2019-06-27 11:38:35,625: Merger Ran
+INFO: 2019-06-27 11:38:35,679: Clean_Sort Ran
+INFO: 2019-06-27 11:38:36,650: Article Number Check Ran
+INFO: 2019-06-27 11:38:38,563: Gathered another Load File
+INFO: 2019-06-27 11:38:43,193: Merger Ran
+INFO: 2019-06-27 11:38:43,278: Clean_Sort Ran
+INFO: 2019-06-27 11:38:44,247: Article Number Check Ran
+INFO: 2019-06-27 11:38:44,247: All Load files Loaded
+INFO: 2019-06-27 11:38:44,247: Moved any offending Load Files from /temp back to to_be_loaded
+INFO: 2019-06-27 11:38:45,134: SaveAs Ran
+INFO: 2019-06-27 11:38:45,149: Completed Load Folder Made
+INFO: 2019-06-27 11:38:45,164: Individual and Merged Load Files moved to Complete Folder
+INFO: 2019-06-27 11:38:45,178: Individual and Merged Load Files moved to Complete Folder
+INFO: 2019-06-27 11:38:45,189: Individual and Merged Load Files moved to Complete Folder
+INFO: 2019-06-27 11:38:47,125: Email Sent to R Content Technical Inbox

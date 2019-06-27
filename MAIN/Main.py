@@ -42,15 +42,31 @@ restart = 1
 any_files = 0
 while restart < 10:
     #Launch Excel and Execute Macros
-    xlApp = win32com.client.DispatchEx('Excel.Application')
-    xlsPath = os.path.expanduser('D:\MISC\MergeTool\Copy of Copy of Part-Manual-Merge1.xlsm')
-    wb = xlApp.Workbooks.Open(Filename=xlsPath)
-    xlApp.Run('simpleXlsMerger')
-    logging.info("Merger Ran")
-    xlApp.Run('Clean_Sort')
-    logging.info("Clean_Sort Ran")
-    xlApp.Run('datavalidation')
-    logging.info("Article Number Check Ran")
+    try:
+        wb.Close(False)
+        xlApp.Quit()
+        del xlApp
+        xlApp = win32com.client.DispatchEx('Excel.Application')
+        xlsPath = os.path.expanduser('D:\MISC\MergeTool\Copy of Copy of Part-Manual-Merge1.xlsm')
+        wb = xlApp.Workbooks.Open(Filename=xlsPath)
+        xlApp.Run('simpleXlsMerger')
+        logging.info("Merger Ran")
+        xlApp.Run('Clean_Sort')
+        logging.info("Clean_Sort Ran")
+        xlApp.Run('datavalidation')
+        logging.info("Article Number Check Ran")
+    except:
+        xlApp = win32com.client.DispatchEx('Excel.Application')
+        xlsPath = os.path.expanduser('D:\MISC\MergeTool\Copy of Copy of Part-Manual-Merge1.xlsm')
+        wb = xlApp.Workbooks.Open(Filename=xlsPath)
+        xlApp.Run('simpleXlsMerger')
+        logging.info("Merger Ran")
+        xlApp.Run('Clean_Sort')
+        logging.info("Clean_Sort Ran")
+        xlApp.Run('datavalidation')
+        logging.info("Article Number Check Ran")
+
+
 
 
     
@@ -71,7 +87,6 @@ while restart < 10:
                 restart = 11
         
             else:
-                wb.Close
                 list_of_files = glob.glob(subtobeloaded)
                 oldest_file = max(list_of_files, key=os.path.getctime)
                 print (oldest_file)
@@ -82,7 +97,6 @@ while restart < 10:
 
 
     else:
-        wb.Close
         list_of_files = glob.glob(subdatasheetloading)
         latest_file = min(list_of_files, key=os.path.getctime)
         print (latest_file)
@@ -111,8 +125,9 @@ try:
     xlApp.Run('SaveAs')
 
 except:
+    xlApp.Quit()
+    del xlApp
     logging.info("SaveAs Ran")
-    wb.Close
     date = datetime.today().strftime('%Y-%m-%d')
     dirname = completed+date+(" #1")
     if not os.path.exists(dirname):
@@ -124,10 +139,10 @@ except:
         logging.info("Completed Load Folder Made")
 
         for f in files:
-            shutil.move(source2+'\\'+f, dest4)
+            shutil.move(datasheetloading+'\\'+f, dest4)
             logging.info("Individual and Merged Load Files moved to Complete Folder")
         try:
-            shutil.move(("D:\MISC\MergeTool\Log"),dirname)
+            shutil.move(logdir,dirname)
 
         except:
             print ("Ignore this message")
@@ -137,7 +152,7 @@ except:
 
         
     else:
-        dirname2 = dir+date+(" #2")
+        dirname2 = completed+date+(" #2")
         os.mkdir(dirname2)
         dest4 = dirname2
 
@@ -146,10 +161,10 @@ except:
         logging.info("Completed Load Folder Made")
 
         for f in files:
-            shutil.move(source2+'\\'+f, dest4)
+            shutil.move(datasheetloading+'\\'+f, dest4)
             logging.info("Individual and Merged Load Files moved to Complete Folder")
         try:
-            shutil.move((logdir),dirname2)
+            shutil.move(logdir,dirname2)
 
         except:
             print ("Ignore this message")
