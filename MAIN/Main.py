@@ -132,6 +132,9 @@ except:
     logging.info("SaveAs Ran")
     date = datetime.today().strftime('%Y-%m-%d')
     dirname = completed+date+(" #1")
+    dirname2 = completed+date+(" #2")
+    dirname3 = completed+date+(" #3")
+    dirname4 = completed+date+(" #4")
     if not os.path.exists(dirname):
         os.mkdir(dirname)
         dest4 = dirname
@@ -153,8 +156,7 @@ except:
 
 
         
-    else:
-        dirname2 = completed+date+(" #2")
+    elif not os.path.exists(dirname2):
         os.mkdir(dirname2)
         dest4 = dirname2
 
@@ -167,6 +169,42 @@ except:
             logging.info("Individual and Merged Load Files moved to Complete Folder")
         try:
             shutil.move(logdir,dirname2)
+
+        except:
+            logging.info("Log File Moved to Completed Folder")
+
+
+    elif not os.path.exists(dirname3):
+        os.mkdir(dirname3)
+        dest4 = dirname3
+
+        files = os.listdir(datasheetloading)
+
+        logging.info("Completed Load Folder Made")
+
+        for f in files:
+            shutil.move(datasheetloading+'\\'+f, dest4)
+            logging.info("Individual and Merged Load Files moved to Complete Folder")
+        try:
+            shutil.move(logdir,dirname3)
+
+        except:
+            logging.info("Log File Moved to Completed Folder")
+
+
+    elif not os.path.exists(dirname4):
+        os.mkdir(dirname4)
+        dest4 = dirname4
+
+        files = os.listdir(datasheetloading)
+
+        logging.info("Completed Load Folder Made")
+
+        for f in files:
+            shutil.move(datasheetloading+'\\'+f, dest4)
+            logging.info("Individual and Merged Load Files moved to Complete Folder")
+        try:
+            shutil.move(logdir,dirname4)
 
         except:
             logging.info("Log File Moved to Completed Folder")
