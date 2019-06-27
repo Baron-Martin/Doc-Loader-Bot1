@@ -28,6 +28,12 @@ subdatasheetloading = r'\\wfsrvgbco001003\Datasrv5\MPP\GlobalImageManagement\Dat
 logging.basicConfig(format='%(levelname)s: %(asctime)s: %(message)s', filename="Log", level=logging.INFO)
 logging.info("Log File Created")
 
+#Move New Load Files into 'to_be_loaded'
+files = os.listdir(datasheetloading)
+
+for f in files:
+        shutil.move(datasheetloading+'\\'+f, tobeloaded)
+
 #Pull Files from 'to_be_loaded' - oldest files first
 list_of_files = glob.glob(subtobeloaded)
 oldest_file = max(list_of_files, key=os.path.getctime)
