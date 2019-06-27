@@ -47,7 +47,7 @@ while restart < 10:
         xlApp.Quit()
         del xlApp
         xlApp = win32com.client.DispatchEx('Excel.Application')
-        xlsPath = os.path.expanduser('D:\Automation\docloaderbot\Copy of Copy of Part-Manual-Merge1.xlsm')
+        xlsPath = os.path.expanduser('D:\Automation\docloaderbot\Merge Spreadsheet.xlsm')
         wb = xlApp.Workbooks.Open(Filename=xlsPath)
         xlApp.Run('simpleXlsMerger')
         logging.info("Merger Ran")
@@ -57,7 +57,7 @@ while restart < 10:
         logging.info("Article Number Check Ran")
     except:
         xlApp = win32com.client.DispatchEx('Excel.Application')
-        xlsPath = os.path.expanduser('D:\Automation\docloaderbot\Copy of Copy of Part-Manual-Merge1.xlsm')
+        xlsPath = os.path.expanduser('D:\Automation\docloaderbot\Merge Spreadsheet.xlsm')
         wb = xlApp.Workbooks.Open(Filename=xlsPath)
         xlApp.Run('simpleXlsMerger')
         logging.info("Merger Ran")
