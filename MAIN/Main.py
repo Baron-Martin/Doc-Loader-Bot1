@@ -214,26 +214,3 @@ except:
 
         except:
             logging.info("Log File Moved to Completed Folder")
-
-
-# BOT Email
-gmail_user = 'BOTdr.loader@gmail.com'  
-gmail_password = 'Xswqaz7471'
-
-sent_from = gmail_user  
-to = ['joe.martin@rs-components.com']  
-subject = 'Dr. Loader - Load Prepared'
-body = ("A Load has been prepared for you. Please check the Log File in the Completed Load File folder for information")
-message = 'Subject: {}\n\n{}'.format(subject, body)
-
-
-try:  
-    server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
-    server.ehlo()
-    server.login(gmail_user, gmail_password)
-    server.sendmail(sent_from, to, message)
-    server.close()
-    logging.info("Email Sent to R Content Technical Inbox")
-
-except:
-    print ("Email Fail")
