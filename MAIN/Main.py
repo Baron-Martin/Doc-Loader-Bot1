@@ -9,20 +9,19 @@ import logging
 import logging.config
 import os, os.path
 import shutil
-from xlrd import open_workbook
 import os.path
 import win32com.client
 
 #Directory Variables
-tobeloaded = '\\wfsrvgbco001003\Datasrv5\MPP\GlobalImageManagement\Datasheet Loading New\_to be loaded/'
-datasheetloading = '\\wfsrvgbco001003\Datasrv5\MPP\GlobalImageManagement\Datasheet Loading New\Datasheet Loading/'
-temp = '\\wfsrvgbco001003\Datasrv5\MPP\GlobalImageManagement\Datasheet Loading New\temp'
-completed = '\\wfsrvgbco001003\Datasrv5\MPP\GlobalImageManagement\Datasheet Loading New\Completed Load Files/'
-logdir = 'D:\Automation\docloaderbot\Log'
+tobeloaded = r"\\wfsrvgbco001003\Datasrv5\MPP\GlobalImageManagement\Datasheet Loading New\_to be loaded/"
+datasheetloading = r'\\wfsrvgbco001003\Datasrv5\MPP\GlobalImageManagement\Datasheet Loading New\Datasheet Loading/'
+temp = r'\\wfsrvgbco001003\Datasrv5\MPP\GlobalImageManagement\Datasheet Loading New\temp'
+completed = r'\\wfsrvgbco001003\Datasrv5\MPP\GlobalImageManagement\Datasheet Loading New\Completed Load Files/'
+logdir = r'M:\GlobalImageManagement\Datasheet Loading New\Log'
 
 #Glob Dirs
-subtobeloaded = '\\wfsrvgbco001003\Datasrv5\MPP\GlobalImageManagement\Datasheet Loading New\_to be loaded/*'
-subdatasheetloading = '\\wfsrvgbco001003\Datasrv5\MPP\GlobalImageManagement\Datasheet Loading New\Datasheet Loading/*'
+subtobeloaded = r'//wfsrvgbco001003/Datasrv5/MPP/GlobalImageManagement/Datasheet Loading New/_to be loaded/*'
+subdatasheetloading = r'\\wfsrvgbco001003\Datasrv5\MPP\GlobalImageManagement\Datasheet Loading New\Datasheet Loading/*'
 
 
 #Create Log File
@@ -47,7 +46,7 @@ while restart < 10:
         xlApp.Quit()
         del xlApp
         xlApp = win32com.client.DispatchEx('Excel.Application')
-        xlsPath = os.path.expanduser('D:\Automation\docloaderbot\Merge Spreadsheet.xlsm')
+        xlsPath = os.path.expanduser('M:\GlobalImageManagement\Datasheet Loading New\Merge Spreadsheet.xlsm')
         wb = xlApp.Workbooks.Open(Filename=xlsPath)
         xlApp.Run('simpleXlsMerger')
         logging.info("Merger Ran")
@@ -57,7 +56,7 @@ while restart < 10:
         logging.info("Article Number Check Ran")
     except:
         xlApp = win32com.client.DispatchEx('Excel.Application')
-        xlsPath = os.path.expanduser('D:\Automation\docloaderbot\Merge Spreadsheet.xlsm')
+        xlsPath = os.path.expanduser('M:\GlobalImageManagement\Datasheet Loading New\Merge Spreadsheet.xlsm')
         wb = xlApp.Workbooks.Open(Filename=xlsPath)
         xlApp.Run('simpleXlsMerger')
         logging.info("Merger Ran")
@@ -109,8 +108,8 @@ while restart < 10:
 
 
 #Move Files from temp back to /to_be_loaded
-source = '\\wfsrvgbco001003\Datasrv5\MPP\GlobalImageManagement\Datasheet Loading New\temp'
-dest3 = '\\wfsrvgbco001003\Datasrv5\MPP\GlobalImageManagement\Datasheet Loading New\_to be loaded/'
+source = r'\\wfsrvgbco001003\Datasrv5\MPP\GlobalImageManagement\Datasheet Loading New\temp'
+dest3 = r'\\wfsrvgbco001003\Datasrv5\MPP\GlobalImageManagement\Datasheet Loading New\_to be loaded/'
 
 files = os.listdir(source)
 
@@ -175,7 +174,7 @@ gmail_user = 'BOTdr.loader@gmail.com'
 gmail_password = 'Xswqaz7471'
 
 sent_from = gmail_user  
-to = ['joe.martin@rs-components.com','robert.jachowicz@rs-components.com']  
+to = ['joe.martin@rs-components.com']  
 subject = 'Dr. Loader - Load Prepared'
 body = ("A Load has been prepared for you. Please check the Log File in the Completed Load File folder for information")
 message = 'Subject: {}\n\n{}'.format(subject, body)
