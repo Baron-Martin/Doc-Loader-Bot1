@@ -17,12 +17,14 @@ tobeloaded = r"\\wfsrvgbco001003\Datasrv5\MPP\GlobalImageManagement\Datasheet Lo
 datasheetloading = r'\\wfsrvgbco001003\Datasrv5\MPP\GlobalImageManagement\Datasheet Loading New\Datasheet Loading/'
 temp = r'\\wfsrvgbco001003\Datasrv5\MPP\GlobalImageManagement\Datasheet Loading New\temp'
 completed = r'\\wfsrvgbco001003\Datasrv5\MPP\GlobalImageManagement\Datasheet Loading New\Completed Load Files/'
-logdir = r'M:\GlobalImageManagement\Datasheet Loading New\Doc-Loader-Bot1\MAIN\Log'
+logdir = r'M:\GlobalImageManagement\Datasheet Loading New\Log'
 
 #Glob Dirs
 subtobeloaded = r'//wfsrvgbco001003/Datasrv5/MPP/GlobalImageManagement/Datasheet Loading New/_to be loaded/*'
 subdatasheetloading = r'\\wfsrvgbco001003\Datasrv5\MPP\GlobalImageManagement\Datasheet Loading New\Datasheet Loading/*'
 
+#Remove Previous Log File
+os.remove("Log")
 
 #Create Log File
 logging.basicConfig(format='%(levelname)s: %(asctime)s: %(message)s', filename="Log", level=logging.INFO)
@@ -36,7 +38,7 @@ for f in files:
 
 #Pull Files from 'to_be_loaded' - oldest files first
 list_of_files = glob.glob(subtobeloaded)
-oldest_file = min(list_of_files, key=os.path.getctime)
+oldest_file = max(list_of_files, key=os.path.getctime)
 print (oldest_file)
 shutil.move(oldest_file, datasheetloading)
 logging.info("Oldest File in to_be_loaded folder has been moved to Datasheet Loading:")
@@ -90,7 +92,7 @@ while restart < 10:
         number=(f.read())
 
         #Stop Loop if under Article Limit
-        if int(number) <1002:
+        if int(number) <1001:
                 if int(number) >999:
                     logging.info("Articles Found:")
                     logging.info(number)
@@ -114,7 +116,7 @@ while restart < 10:
 
         else:
                 list_of_files = glob.glob(subdatasheetloading)
-                latest_file = max(list_of_files, key=os.path.getctime)
+                latest_file = min(list_of_files, key=os.path.getctime)
                 print (latest_file)
                 shutil.move(latest_file, temp)
                 logging.info("Over 1000 Article Limit, removed offending load file")
