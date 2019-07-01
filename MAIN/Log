@@ -1,15 +1,19 @@
-INFO: 2019-07-01 12:51:15,860: Log File Created
-INFO: 2019-07-01 12:51:15,961: Oldest File in to_be_loaded folder has been moved to Datasheet Loading:
-INFO: 2019-07-01 12:51:15,962: //wfsrvgbco001003/Datasrv5/MPP/GlobalImageManagement/Datasheet Loading New/_to be loaded\Load Robert Jachowicz #1001 27-Jun-19 16-19-18.xlsx
-INFO: 2019-07-01 12:51:18,012: Merger Ran
-INFO: 2019-07-01 12:51:18,035: Clean_Sort Ran
-INFO: 2019-07-01 12:51:18,041: Article Number Check Ran
-INFO: 2019-07-01 12:51:18,052: Read Number
-INFO: 2019-07-01 12:51:18,053: Articles Found:
-INFO: 2019-07-01 12:51:18,054: 1001
-INFO: 2019-07-01 12:51:18,056: Moved any offending Load Files from /temp back to to_be_loaded
-INFO: 2019-07-01 12:51:18,719: SaveAs Ran
-INFO: 2019-07-01 12:51:18,754: Completed Load Folder Made
-INFO: 2019-07-01 12:51:18,782: Individual and Merged Load Files moved to Complete Folder
-INFO: 2019-07-01 12:51:18,816: Individual and Merged Load Files moved to Complete Folder
-INFO: 2019-07-01 12:51:18,837: Log File Moved to Completed Folder
+INFO: 2019-07-01 14:11:25,270: Log File Created
+INFO: 2019-07-01 14:11:25,271: Files in Datasheet Loading moved to To_be_loaded if any.
+INFO: 2019-07-01 14:11:25,287: Oldest File in to_be_loaded folder has been moved to Datasheet Loading:
+INFO: 2019-07-01 14:11:25,288: //wfsrvgbco001003/Datasrv5/MPP/GlobalImageManagement/Datasheet Loading New/_to be loaded\Load Robert Jachowicz #1001 27-Jun-19 16-19-18.xlsx
+INFO: 2019-07-01 14:11:27,324: Merger Macro Ran
+INFO: 2019-07-01 14:11:27,346: Clean_Sort Macro Ran
+INFO: 2019-07-01 14:11:27,353: Article Number Check Macro Ran
+INFO: 2019-07-01 14:11:27,379: Reading Number of Articles...
+INFO: 2019-07-01 14:11:27,380: Articles Found:
+INFO: 2019-07-01 14:11:27,380: 1001
+INFO: 2019-07-01 14:11:27,385: Moved any offending Load Files from /temp back to to_be_loaded
+INFO: 2019-07-01 14:11:27,982: SaveAs Macro Ran
+INFO: 2019-07-01 14:11:27,987: COM Memory removed
+INFO: 2019-07-01 14:11:27,991: Completed Load Folder Made
+INFO: 2019-07-01 14:11:27,992: \\wfsrvgbco001003\Datasrv5\MPP\GlobalImageManagement\Datasheet Loading New\Completed Load Files/2019-07-01 #3
+INFO: 2019-07-01 14:11:28,029: Individual and Merged Load Files moved to Complete Folder
+INFO: 2019-07-01 14:11:28,094: Individual and Merged Load Files moved to Complete Folder
+INFO: 2019-07-01 14:11:28,129: Log File Moved to Completed Folder
+INFO: 2019-07-01 14:11:28,136: Program Ended Successfully
