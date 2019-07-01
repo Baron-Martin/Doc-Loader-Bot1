@@ -48,32 +48,42 @@ restart = 1
 any_files = 0
 while restart < 10:
     #Launch Excel and Execute Macros
-    try:
-        wb.Close(False)
-        xlApp.Quit()
-        del xlApp
-        logging.info("Closed Previous COM Instance If on 2nd or above passthrough.")
-        xlApp = win32com.client.DispatchEx('Excel.Application')
-        xlsPath = os.path.expanduser('M:\GlobalImageManagement\Datasheet Loading New\Doc-Loader-Bot1\MAIN\Merge Spreadsheet.xlsm')
-        wb = xlApp.Workbooks.Open(Filename=xlsPath)
-        xlApp.Run('simpleXlsMerger')
-        logging.info("Merger Ran")
-        xlApp.Run('Clean_Sort')
-        logging.info("Clean_Sort Ran")
-        xlApp.Run('datavalidation')
-        logging.info("Article Number Check Ran")
-    except:
-        xlApp = win32com.client.DispatchEx('Excel.Application')
-        xlsPath = os.path.expanduser('M:\GlobalImageManagement\Datasheet Loading New\Doc-Loader-Bot1\MAIN\Merge Spreadsheet.xlsm')
-        wb = xlApp.Workbooks.Open(Filename=xlsPath)
-        xlApp.Run('simpleXlsMerger')
-        logging.info("Merger Ran")
-        xlApp.Run('Clean_Sort')
-        logging.info("Clean_Sort Ran")
-        xlApp.Run('datavalidation')
-        logging.info("Article Number Check Ran")
+	try:
+		try:
+			wb.Close(False)
+			xlApp.Quit()
+			del xlApp
+			logging.info("Closed Previous COM Instance If on 2nd or above passthrough.")
+			xlApp = win32com.client.DispatchEx('Excel.Application')
+			xlsPath = os.path.expanduser('M:\GlobalImageManagement\Datasheet Loading New\Doc-Loader-Bot1\MAIN\Merge Spreadsheet.xlsm')
+			wb = xlApp.Workbooks.Open(Filename=xlsPath)
+			xlApp.Run('simpleXlsMerger')
+			logging.info("Merger Ran")
+			xlApp.Run('Clean_Sort')
+			logging.info("Clean_Sort Ran")
+			xlApp.Run('datavalidation')
+			logging.info("Article Number Check Ran")
+		except:
+			xlApp = win32com.client.DispatchEx('Excel.Application')
+			xlsPath = os.path.expanduser('M:\GlobalImageManagement\Datasheet Loading New\Doc-Loader-Bot1\MAIN\Merge Spreadsheet.xlsm')
+			wb = xlApp.Workbooks.Open(Filename=xlsPath)
+			xlApp.Run('simpleXlsMerger')
+			logging.info("Merger Ran")
+			xlApp.Run('Clean_Sort')
+			logging.info("Clean_Sort Ran")
+			xlApp.Run('datavalidation')
+			logging.info("Article Number Check Ran")
 
-
+	except:
+		try:
+			wb.Close(False)
+			xlApp.Quit()
+			del xlApp
+			logging.warning("Error: Excel Failure. Terminating Program.")
+			exit()
+		except:
+			logging.warning("Error: Excel Failure. Terminating Program.")
+			exit()
 
 
     
