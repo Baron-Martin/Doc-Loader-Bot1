@@ -47,112 +47,81 @@ logging.info(oldest_file)
 restart = 1
 any_files = 0
 while restart < 10:
-    #Launch Excel and Execute Macros
-<<<<<<< HEAD
-	try:
-		try:
-			wb.Close(False)
-			xlApp.Quit()
-			del xlApp
-			logging.info("Closed Previous COM Instance If on 2nd or above passthrough.")
-			xlApp = win32com.client.DispatchEx('Excel.Application')
-			xlsPath = os.path.expanduser('M:\GlobalImageManagement\Datasheet Loading New\Doc-Loader-Bot1\MAIN\Merge Spreadsheet.xlsm')
-			wb = xlApp.Workbooks.Open(Filename=xlsPath)
-			xlApp.Run('simpleXlsMerger')
-			logging.info("Merger Ran")
-			xlApp.Run('Clean_Sort')
-			logging.info("Clean_Sort Ran")
-			xlApp.Run('datavalidation')
-			logging.info("Article Number Check Ran")
-		except:
-			xlApp = win32com.client.DispatchEx('Excel.Application')
-			xlsPath = os.path.expanduser('M:\GlobalImageManagement\Datasheet Loading New\Doc-Loader-Bot1\MAIN\Merge Spreadsheet.xlsm')
-			wb = xlApp.Workbooks.Open(Filename=xlsPath)
-			xlApp.Run('simpleXlsMerger')
-			logging.info("Merger Ran")
-			xlApp.Run('Clean_Sort')
-			logging.info("Clean_Sort Ran")
-			xlApp.Run('datavalidation')
-			logging.info("Article Number Check Ran")
+        #Launch Excel and Execute Macros
+        try:
+                try:
+                        wb.Close(False)
+                        xlApp.Quit()
+                        del xlApp
+                        logging.info("Closed Previous COM Instance If on 2nd or above passthrough.")
+                        xlApp = win32com.client.DispatchEx('Excel.Application')
+                        xlsPath = os.path.expanduser('M:\GlobalImageManagement\Datasheet Loading New\Doc-Loader-Bot1\MAIN\Merge Spreadsheet.xlsm')
+                        wb = xlApp.Workbooks.Open(Filename=xlsPath)
+                        xlApp.Run('simpleXlsMerger')
+                        logging.info("Merger Ran")
+                        xlApp.Run('Clean_Sort')
+                        logging.info("Clean_Sort Ran")
+                        xlApp.Run('datavalidation')
+                        logging.info("Article Number Check Ran")
+                except:
+                        xlApp = win32com.client.DispatchEx('Excel.Application')
+                        xlsPath = os.path.expanduser('M:\GlobalImageManagement\Datasheet Loading New\Doc-Loader-Bot1\MAIN\Merge Spreadsheet.xlsm')
+                        wb = xlApp.Workbooks.Open(Filename=xlsPath)
+                        xlApp.Run('simpleXlsMerger')
+                        logging.info("Merger Ran")
+                        xlApp.Run('Clean_Sort')
+                        logging.info("Clean_Sort Ran")
+                        xlApp.Run('datavalidation')
+                        logging.info("Article Number Check Ran")
 
-	except:
-		try:
-			wb.Close(False)
-			xlApp.Quit()
-			del xlApp
-			logging.warning("Error: Excel Failure. Terminating Program.")
-			exit()
-		except:
-			logging.warning("Error: Excel Failure. Terminating Program.")
-			exit()
-=======
-    try:
-        wb.Close(False)
-        xlApp.Quit()
-        del xlApp
-        logging.info("Closed Previous COM Instance If on 2nd or above passthrough.")
-        xlApp = win32com.client.DispatchEx('Excel.Application')
-        xlsPath = os.path.expanduser('M:\GlobalImageManagement\Datasheet Loading New\Merge Spreadsheet.xlsm')
-        wb = xlApp.Workbooks.Open(Filename=xlsPath)
-        xlApp.Run('simpleXlsMerger')
-        logging.info("Merger Ran")
-        xlApp.Run('Clean_Sort')
-        logging.info("Clean_Sort Ran")
-        xlApp.Run('datavalidation')
-        logging.info("Article Number Check Ran")
-    except:
-        xlApp = win32com.client.DispatchEx('Excel.Application')
-        xlsPath = os.path.expanduser('M:\GlobalImageManagement\Datasheet Loading New\Merge Spreadsheet.xlsm')
-        wb = xlApp.Workbooks.Open(Filename=xlsPath)
-        xlApp.Run('simpleXlsMerger')
-        logging.info("Merger Ran")
-        xlApp.Run('Clean_Sort')
-        logging.info("Clean_Sort Ran")
-        xlApp.Run('datavalidation')
-        logging.info("Article Number Check Ran")
+        except:
+                try:
+                        wb.Close(False)
+                        xlApp.Quit()
+                        del xlApp
+                        logging.warning("Error: Excel Failure. Terminating Program.")
+                        exit()
+                except:
+                        logging.warning("Error: Excel Failure. Terminating Program.")
+                        exit()
 
+        #Check for <2000
+        f=open("number.txt","r", encoding="utf-16")
+        number=(f.read())
 
->>>>>>> parent of 4944c0a... Log, Number, and Excel Dir Update
+        #Stop Loop if under Article Limit
+        if int(number) <1001:
+                if int(number) >999:
+                    logging.info("Articles Found:")
+                    logging.info(number)
+                    restart = 11
 
+                else:
+                    if len(os.listdir(tobeloaded) ) == 0:
+                        logging.info("All Possible Load files Loaded")
+                        restart = 11
 
-    
-    #Check for <2000
-    f=open("number.txt","r", encoding="utf-16")
-    number=(f.read())
-
-    #Stop Loop if under Article Limit
-    if int(number) <1001:
-        if int(number) >999:
-            logging.info("Articles Found:")
-            logging.info(number)
-            restart = 11
-
-        else:
-            if len(os.listdir(tobeloaded) ) == 0:
-                logging.info("All Possible Load files Loaded")
-                restart = 11
-        
-            else:
-                list_of_files = glob.glob(subtobeloaded)
-                oldest_file = max(list_of_files, key=os.path.getctime)
-                print (oldest_file)
-                shutil.move(oldest_file, datasheetloading)
-                logging.info("Gathered another Load File:")
-                logging.info(oldest_file)
+                    else:
+                        list_of_files = glob.glob(subtobeloaded)
+                        oldest_file = max(list_of_files, key=os.path.getctime)
+                        print (oldest_file)
+                        shutil.move(oldest_file, datasheetloading)
+                        logging.info("Gathered another Load File:")
+                        logging.info(oldest_file)
             
 
 
 
-    else:
-        list_of_files = glob.glob(subdatasheetloading)
-        latest_file = min(list_of_files, key=os.path.getctime)
-        print (latest_file)
-        shutil.move(latest_file, temp)
-        logging.info("Over 1000 Article Limit, removed offending load file")
+        else:
+                list_of_files = glob.glob(subdatasheetloading)
+                latest_file = min(list_of_files, key=os.path.getctime)
+                print (latest_file)
+                shutil.move(latest_file, temp)
+                logging.info("Over 1000 Article Limit, removed offending load file")
 
-        restart = restart + 1
-        if restart == 10:
-            logging.critical("Program has re-run 10 times, and there are still more than 2000 Articles. Program stopped to avoid crashing system.")
+                restart = restart + 1
+                if restart == 10:
+                    logging.critical("Program has re-run 10 times, and there are still more than 2000 Articles. Program stopped to avoid crashing system.")
 
 
 #Move Files from temp back to /to_be_loaded
