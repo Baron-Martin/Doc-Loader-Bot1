@@ -17,7 +17,7 @@ tobeloaded = r"\\wfsrvgbco001003\Datasrv5\MPP\GlobalImageManagement\Datasheet Lo
 datasheetloading = r'\\wfsrvgbco001003\Datasrv5\MPP\GlobalImageManagement\Datasheet Loading New\Datasheet Loading/'
 temp = r'\\wfsrvgbco001003\Datasrv5\MPP\GlobalImageManagement\Datasheet Loading New\temp'
 completed = r'\\wfsrvgbco001003\Datasrv5\MPP\GlobalImageManagement\Datasheet Loading New\Completed Load Files/'
-logdir = r'M:\GlobalImageManagement\Datasheet Loading New\Log'
+logdir = r'M:\GlobalImageManagement\Datasheet Loading New\Doc-Loader-Bot1\MAIN\Log'
 
 #Glob Dirs
 subtobeloaded = r'//wfsrvgbco001003/Datasrv5/MPP/GlobalImageManagement/Datasheet Loading New/_to be loaded/*'
@@ -38,7 +38,7 @@ for f in files:
 
 #Pull Files from 'to_be_loaded' - oldest files first
 list_of_files = glob.glob(subtobeloaded)
-oldest_file = max(list_of_files, key=os.path.getctime)
+oldest_file = min(list_of_files, key=os.path.getctime)
 print (oldest_file)
 shutil.move(oldest_file, datasheetloading)
 logging.info("Oldest File in to_be_loaded folder has been moved to Datasheet Loading:")
@@ -90,9 +90,10 @@ while restart < 10:
         #Check for <2000
         f=open("number.txt","r", encoding="utf-16")
         number=(f.read())
+        logging.info("Read Number")
 
         #Stop Loop if under Article Limit
-        if int(number) <1001:
+        if int(number) <1002:
                 if int(number) >999:
                     logging.info("Articles Found:")
                     logging.info(number)
@@ -105,7 +106,7 @@ while restart < 10:
 
                     else:
                         list_of_files = glob.glob(subtobeloaded)
-                        oldest_file = max(list_of_files, key=os.path.getctime)
+                        oldest_file = min(list_of_files, key=os.path.getctime)
                         print (oldest_file)
                         shutil.move(oldest_file, datasheetloading)
                         logging.info("Gathered another Load File:")
@@ -116,7 +117,7 @@ while restart < 10:
 
         else:
                 list_of_files = glob.glob(subdatasheetloading)
-                latest_file = min(list_of_files, key=os.path.getctime)
+                latest_file = max(list_of_files, key=os.path.getctime)
                 print (latest_file)
                 shutil.move(latest_file, temp)
                 logging.info("Over 1000 Article Limit, removed offending load file")
@@ -127,16 +128,19 @@ while restart < 10:
 
 
 #Move Files from temp back to /to_be_loaded
-source = r'\\wfsrvgbco001003\Datasrv5\MPP\GlobalImageManagement\Datasheet Loading New\temp'
-dest3 = r'\\wfsrvgbco001003\Datasrv5\MPP\GlobalImageManagement\Datasheet Loading New\_to be loaded/'
 
-files = os.listdir(source)
+try:
+        source = r'\\wfsrvgbco001003\Datasrv5\MPP\GlobalImageManagement\Datasheet Loading New\temp'
+        dest3 = r'\\wfsrvgbco001003\Datasrv5\MPP\GlobalImageManagement\Datasheet Loading New\_to be loaded/'
 
-for f in files:
-        shutil.move(source+'\\'+f, dest3)
+        files = os.listdir(source)
 
-logging.info("Moved any offending Load Files from /temp back to to_be_loaded")
+        for f in files:
+                shutil.move(source+'\\'+f, dest3)
 
+        logging.info("Moved any offending Load Files from /temp back to to_be_loaded")
+except:
+        logging.info("Not Files to move from Temp")
 
 #Move Files to Completed New Folder
 try:
