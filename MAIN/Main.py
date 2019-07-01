@@ -24,26 +24,41 @@ subtobeloaded = r'//wfsrvgbco001003/Datasrv5/MPP/GlobalImageManagement/Datasheet
 subdatasheetloading = r'\\wfsrvgbco001003\Datasrv5\MPP\GlobalImageManagement\Datasheet Loading New\Datasheet Loading/*'
 
 #Remove Previous Log File
-os.remove("Log")
+try:
+        os.remove("Log")
+
+except:
+        removelogfile = ("Either there is no previous Log File to be deleted or the program has encountered an Error")
 
 #Create Log File
 logging.basicConfig(format='%(levelname)s: %(asctime)s: %(message)s', filename="Log", level=logging.INFO)
+logging.warning(removelogfile)
 logging.info("Log File Created")
 
 #Move New Load Files into 'to_be_loaded'
-files = os.listdir(datasheetloading)
+try:
+        files = os.listdir(datasheetloading)
 
-for f in files:
-        shutil.move(datasheetloading+'\\'+f, tobeloaded)
-logging.info("Files in Datasheet Loading moved to To_be_loaded if any.")
+        for f in files:
+                shutil.move(datasheetloading+'\\'+f, tobeloaded)
+        logging.info("Files in Datasheet Loading moved to To_be_loaded if any.")
 
+except:
+        logging.warning("Error: Could not move files from Datasheet Loading to To_be_loaded. Closing Program.")
+        exit()
+        
 #Pull Files from 'to_be_loaded' - oldest files first
-list_of_files = glob.glob(subtobeloaded)
-oldest_file = min(list_of_files, key=os.path.getctime)
-print (oldest_file)
-shutil.move(oldest_file, datasheetloading)
-logging.info("Oldest File in to_be_loaded folder has been moved to Datasheet Loading:")
-logging.info(oldest_file)
+try:
+        list_of_files = glob.glob(subtobeloaded)
+        oldest_file = min(list_of_files, key=os.path.getctime)
+        print (oldest_file)
+        shutil.move(oldest_file, datasheetloading)
+        logging.info("Oldest File in to_be_loaded folder has been moved to Datasheet Loading:")
+        logging.info(oldest_file)
+
+except:
+        logging.warning("Error: Could not fetch oldest file from To_be_loaded. Closing Program.")
+        exit()
 
 # Create Loop
 ## used to allow the program to retry the process if there were over 2000 articles on the previous run
@@ -131,18 +146,20 @@ while restart < 10:
 
 
 #Move Files from temp back to /to_be_loaded
+try:
+        source = r'\\wfsrvgbco001003\Datasrv5\MPP\GlobalImageManagement\Datasheet Loading New\temp'
+        dest3 = r'\\wfsrvgbco001003\Datasrv5\MPP\GlobalImageManagement\Datasheet Loading New\_to be loaded/'
 
+        files = os.listdir(source)
 
-source = r'\\wfsrvgbco001003\Datasrv5\MPP\GlobalImageManagement\Datasheet Loading New\temp'
-dest3 = r'\\wfsrvgbco001003\Datasrv5\MPP\GlobalImageManagement\Datasheet Loading New\_to be loaded/'
+        for f in files:
+                shutil.move(source+'\\'+f, dest3)
 
-files = os.listdir(source)
+        logging.info("Moved any offending Load Files from /temp back to to_be_loaded")
 
-for f in files:
-        shutil.move(source+'\\'+f, dest3)
-
-logging.info("Moved any offending Load Files from /temp back to to_be_loaded")
-
+except:
+        logging.warning("Error: Could not move files from Temp to To_be_loaded. Closing Program.")
+        exit()
 
 #Move Files to Completed New Folder
 try:
