@@ -638,3 +638,183 @@ INFO: 2019-06-27 11:38:45,164: Individual and Merged Load Files moved to Complet
 INFO: 2019-06-27 11:38:45,178: Individual and Merged Load Files moved to Complete Folder
 INFO: 2019-06-27 11:38:45,189: Individual and Merged Load Files moved to Complete Folder
 INFO: 2019-06-27 11:38:47,125: Email Sent to R Content Technical Inbox
+INFO: 2019-07-01 08:39:21,223: Log File Created
+INFO: 2019-07-01 08:39:21,345: Oldest File in to_be_loaded folder has been moved to Datasheet Loading:
+INFO: 2019-07-01 08:39:21,346: //wfsrvgbco001003/Datasrv5/MPP/GlobalImageManagement/Datasheet Loading New/_to be loaded\Load McConnell, Lorraine #71 28-Jun-19 17-03-47.xlsx
+INFO: 2019-07-01 08:40:04,853: Log File Created
+INFO: 2019-07-01 08:40:04,871: Oldest File in to_be_loaded folder has been moved to Datasheet Loading:
+INFO: 2019-07-01 08:40:04,871: //wfsrvgbco001003/Datasrv5/MPP/GlobalImageManagement/Datasheet Loading New/_to be loaded\Load Robert Jachowicz #1001 28-Jun-19 16-17-19.xlsx
+INFO: 2019-07-01 08:40:09,523: Merger Ran
+INFO: 2019-07-01 08:40:09,546: Clean_Sort Ran
+INFO: 2019-07-01 08:40:09,553: Article Number Check Ran
+INFO: 2019-07-01 08:40:09,618: Gathered another Load File:
+INFO: 2019-07-01 08:40:09,618: //wfsrvgbco001003/Datasrv5/MPP/GlobalImageManagement/Datasheet Loading New/_to be loaded\Load Robert Jachowicz #999 28-Jun-19 16-12-20.xlsx
+INFO: 2019-07-01 08:40:09,636: Closed Previous COM Instance If on 2nd or above passthrough.
+INFO: 2019-07-01 08:40:11,883: Merger Ran
+INFO: 2019-07-01 08:40:11,914: Clean_Sort Ran
+INFO: 2019-07-01 08:40:11,921: Article Number Check Ran
+INFO: 2019-07-01 08:40:11,940: Gathered another Load File:
+INFO: 2019-07-01 08:40:11,941: //wfsrvgbco001003/Datasrv5/MPP/GlobalImageManagement/Datasheet Loading New/_to be loaded\Load Ryan Mackie #901 28-Jun-19 13-02-32.xlsx
+INFO: 2019-07-01 08:40:11,971: Closed Previous COM Instance If on 2nd or above passthrough.
+INFO: 2019-07-01 08:40:14,411: Merger Ran
+INFO: 2019-07-01 08:40:14,448: Clean_Sort Ran
+INFO: 2019-07-01 08:40:14,455: Article Number Check Ran
+INFO: 2019-07-01 08:40:14,472: Gathered another Load File:
+INFO: 2019-07-01 08:40:14,472: //wfsrvgbco001003/Datasrv5/MPP/GlobalImageManagement/Datasheet Loading New/_to be loaded\Load Ryan Mackie #901 28-Jun-19 13-00-09.xlsx
+INFO: 2019-07-01 08:40:14,493: Closed Previous COM Instance If on 2nd or above passthrough.
+INFO: 2019-07-01 08:40:17,099: Merger Ran
+INFO: 2019-07-01 08:40:17,143: Clean_Sort Ran
+INFO: 2019-07-01 08:40:17,150: Article Number Check Ran
+INFO: 2019-07-01 08:40:17,177: Gathered another Load File:
+INFO: 2019-07-01 08:40:17,177: //wfsrvgbco001003/Datasrv5/MPP/GlobalImageManagement/Datasheet Loading New/_to be loaded\Load Ryan Mackie #901 28-Jun-19 12-19-34.xlsx
+INFO: 2019-07-01 08:40:17,199: Closed Previous COM Instance If on 2nd or above passthrough.
+INFO: 2019-07-01 08:40:19,983: Merger Ran
+INFO: 2019-07-01 08:40:20,034: Clean_Sort Ran
+INFO: 2019-07-01 08:40:20,042: Article Number Check Ran
+INFO: 2019-07-01 08:40:20,098: Gathered another Load File:
+INFO: 2019-07-01 08:40:20,098: //wfsrvgbco001003/Datasrv5/MPP/GlobalImageManagement/Datasheet Loading New/_to be loaded\Load Ryan Mackie #899 28-Jun-19 12-17-28.xlsx
+INFO: 2019-07-01 08:40:20,121: Closed Previous COM Instance If on 2nd or above passthrough.
+INFO: 2019-07-01 08:40:23,078: Merger Ran
+INFO: 2019-07-01 08:40:23,136: Clean_Sort Ran
+INFO: 2019-07-01 08:40:23,144: Article Number Check Ran
+INFO: 2019-07-01 08:40:23,199: Gathered another Load File:
+INFO: 2019-07-01 08:40:23,200: //wfsrvgbco001003/Datasrv5/MPP/GlobalImageManagement/Datasheet Loading New/_to be loaded\Load Ryan Mackie #901 28-Jun-19 12-15-09.xlsx
+INFO: 2019-07-01 08:40:23,223: Closed Previous COM Instance If on 2nd or above passthrough.
+INFO: 2019-07-01 08:40:26,513: Merger Ran
+INFO: 2019-07-01 08:40:26,577: Clean_Sort Ran
+INFO: 2019-07-01 08:40:26,586: Article Number Check Ran
+INFO: 2019-07-01 08:40:26,604: Gathered another Load File:
+INFO: 2019-07-01 08:40:26,604: //wfsrvgbco001003/Datasrv5/MPP/GlobalImageManagement/Datasheet Loading New/_to be loaded\Load Ryan Mackie #901 28-Jun-19 12-12-52.xlsx
+INFO: 2019-07-01 08:40:26,629: Closed Previous COM Instance If on 2nd or above passthrough.
+INFO: 2019-07-01 08:40:29,922: Merger Ran
+INFO: 2019-07-01 08:40:29,993: Clean_Sort Ran
+INFO: 2019-07-01 08:40:30,002: Article Number Check Ran
+INFO: 2019-07-01 08:40:30,022: Gathered another Load File:
+INFO: 2019-07-01 08:40:30,023: //wfsrvgbco001003/Datasrv5/MPP/GlobalImageManagement/Datasheet Loading New/_to be loaded\Load Ryan Mackie #881 28-Jun-19 12-09-28.xlsx
+INFO: 2019-07-01 08:40:30,048: Closed Previous COM Instance If on 2nd or above passthrough.
+INFO: 2019-07-01 08:40:33,617: Merger Ran
+INFO: 2019-07-01 08:40:33,695: Clean_Sort Ran
+INFO: 2019-07-01 08:40:33,705: Article Number Check Ran
+INFO: 2019-07-01 08:40:33,761: Gathered another Load File:
+INFO: 2019-07-01 08:40:33,762: //wfsrvgbco001003/Datasrv5/MPP/GlobalImageManagement/Datasheet Loading New/_to be loaded\Load Ryan Mackie #901 28-Jun-19 12-05-57.xlsx
+INFO: 2019-07-01 08:40:33,787: Closed Previous COM Instance If on 2nd or above passthrough.
+INFO: 2019-07-01 08:40:37,606: Merger Ran
+INFO: 2019-07-01 08:40:37,693: Clean_Sort Ran
+INFO: 2019-07-01 08:40:37,704: Article Number Check Ran
+INFO: 2019-07-01 08:40:37,754: Gathered another Load File:
+INFO: 2019-07-01 08:40:37,754: //wfsrvgbco001003/Datasrv5/MPP/GlobalImageManagement/Datasheet Loading New/_to be loaded\Load Ryan Mackie #895 28-Jun-19 12-00-12.xlsx
+INFO: 2019-07-01 08:40:37,781: Closed Previous COM Instance If on 2nd or above passthrough.
+INFO: 2019-07-01 08:40:41,816: Merger Ran
+INFO: 2019-07-01 08:40:41,914: Clean_Sort Ran
+INFO: 2019-07-01 08:40:41,924: Article Number Check Ran
+INFO: 2019-07-01 08:40:41,976: Gathered another Load File:
+INFO: 2019-07-01 08:40:41,977: //wfsrvgbco001003/Datasrv5/MPP/GlobalImageManagement/Datasheet Loading New/_to be loaded\Load Ryan Mackie #901 28-Jun-19 11-57-09.xlsx
+INFO: 2019-07-01 08:40:42,004: Closed Previous COM Instance If on 2nd or above passthrough.
+INFO: 2019-07-01 08:40:46,453: Merger Ran
+INFO: 2019-07-01 08:40:46,559: Clean_Sort Ran
+INFO: 2019-07-01 08:40:46,583: Article Number Check Ran
+INFO: 2019-07-01 08:40:46,611: Gathered another Load File:
+INFO: 2019-07-01 08:40:46,615: //wfsrvgbco001003/Datasrv5/MPP/GlobalImageManagement/Datasheet Loading New/_to be loaded\Load Ryan Mackie #901 28-Jun-19 11-54-32.xlsx
+INFO: 2019-07-01 08:40:46,647: Closed Previous COM Instance If on 2nd or above passthrough.
+INFO: 2019-07-01 08:40:51,164: Merger Ran
+INFO: 2019-07-01 08:40:51,270: Clean_Sort Ran
+INFO: 2019-07-01 08:40:51,281: Article Number Check Ran
+INFO: 2019-07-01 08:40:51,334: Gathered another Load File:
+INFO: 2019-07-01 08:40:51,335: //wfsrvgbco001003/Datasrv5/MPP/GlobalImageManagement/Datasheet Loading New/_to be loaded\Load Ryan Mackie #884 28-Jun-19 11-51-34.xlsx
+INFO: 2019-07-01 08:40:51,364: Closed Previous COM Instance If on 2nd or above passthrough.
+INFO: 2019-07-01 08:40:55,840: Merger Ran
+INFO: 2019-07-01 08:40:55,953: Clean_Sort Ran
+INFO: 2019-07-01 08:40:55,964: Article Number Check Ran
+INFO: 2019-07-01 08:40:55,978: Gathered another Load File:
+INFO: 2019-07-01 08:40:55,979: //wfsrvgbco001003/Datasrv5/MPP/GlobalImageManagement/Datasheet Loading New/_to be loaded\Load Ryan Mackie #884 28-Jun-19 11-50-20.xlsx
+INFO: 2019-07-01 08:40:56,213: Closed Previous COM Instance If on 2nd or above passthrough.
+INFO: 2019-07-01 08:41:00,856: Merger Ran
+INFO: 2019-07-01 08:41:00,980: Clean_Sort Ran
+INFO: 2019-07-01 08:41:00,992: Article Number Check Ran
+INFO: 2019-07-01 08:41:01,008: Gathered another Load File:
+INFO: 2019-07-01 08:41:01,008: //wfsrvgbco001003/Datasrv5/MPP/GlobalImageManagement/Datasheet Loading New/_to be loaded\Load Ryan Mackie #901 28-Jun-19 11-41-09.xlsx
+INFO: 2019-07-01 08:41:01,039: Closed Previous COM Instance If on 2nd or above passthrough.
+INFO: 2019-07-01 08:41:05,963: Merger Ran
+INFO: 2019-07-01 08:41:06,096: Clean_Sort Ran
+INFO: 2019-07-01 08:41:06,109: Article Number Check Ran
+INFO: 2019-07-01 08:41:06,129: Gathered another Load File:
+INFO: 2019-07-01 08:41:06,129: //wfsrvgbco001003/Datasrv5/MPP/GlobalImageManagement/Datasheet Loading New/_to be loaded\Load Ryan Mackie #899 28-Jun-19 11-37-55.xlsx
+INFO: 2019-07-01 08:41:06,161: Closed Previous COM Instance If on 2nd or above passthrough.
+INFO: 2019-07-01 08:41:11,088: Merger Ran
+INFO: 2019-07-01 08:41:11,224: Clean_Sort Ran
+INFO: 2019-07-01 08:41:11,237: Article Number Check Ran
+INFO: 2019-07-01 08:41:11,257: Gathered another Load File:
+INFO: 2019-07-01 08:41:11,257: //wfsrvgbco001003/Datasrv5/MPP/GlobalImageManagement/Datasheet Loading New/_to be loaded\Load Ryan Mackie #849 28-Jun-19 11-34-58.xlsx
+INFO: 2019-07-01 08:41:11,291: Closed Previous COM Instance If on 2nd or above passthrough.
+INFO: 2019-07-01 08:41:16,415: Merger Ran
+INFO: 2019-07-01 08:41:16,561: Clean_Sort Ran
+INFO: 2019-07-01 08:41:16,576: Article Number Check Ran
+INFO: 2019-07-01 08:41:16,596: Gathered another Load File:
+INFO: 2019-07-01 08:41:16,597: //wfsrvgbco001003/Datasrv5/MPP/GlobalImageManagement/Datasheet Loading New/_to be loaded\Load Ryan Mackie #985 28-Jun-19 11-29-37.xlsx
+INFO: 2019-07-01 08:41:16,631: Closed Previous COM Instance If on 2nd or above passthrough.
+INFO: 2019-07-01 08:41:22,217: Merger Ran
+INFO: 2019-07-01 08:41:22,376: Clean_Sort Ran
+INFO: 2019-07-01 08:41:22,391: Article Number Check Ran
+INFO: 2019-07-01 08:41:22,413: Gathered another Load File:
+INFO: 2019-07-01 08:41:22,414: //wfsrvgbco001003/Datasrv5/MPP/GlobalImageManagement/Datasheet Loading New/_to be loaded\Load Ryan Mackie #1000 28-Jun-19 11-25-37.xlsx
+INFO: 2019-07-01 08:41:22,450: Closed Previous COM Instance If on 2nd or above passthrough.
+INFO: 2019-07-01 08:41:28,396: Merger Ran
+INFO: 2019-07-01 08:41:28,563: Clean_Sort Ran
+INFO: 2019-07-01 08:41:28,580: Article Number Check Ran
+INFO: 2019-07-01 08:41:28,630: Gathered another Load File:
+INFO: 2019-07-01 08:41:28,631: //wfsrvgbco001003/Datasrv5/MPP/GlobalImageManagement/Datasheet Loading New/_to be loaded\Load Ryan Mackie #1001 28-Jun-19 11-21-20.xlsx
+INFO: 2019-07-01 08:41:28,668: Closed Previous COM Instance If on 2nd or above passthrough.
+INFO: 2019-07-01 08:45:12,675: Log File Created
+INFO: 2019-07-01 08:45:12,724: Oldest File in to_be_loaded folder has been moved to Datasheet Loading:
+INFO: 2019-07-01 08:45:12,725: //wfsrvgbco001003/Datasrv5/MPP/GlobalImageManagement/Datasheet Loading New/_to be loaded\Load Robert Jachowicz #1001 28-Jun-19 16-17-19.xlsx
+INFO: 2019-07-01 08:45:15,115: Merger Ran
+INFO: 2019-07-01 08:45:15,138: Clean_Sort Ran
+INFO: 2019-07-01 08:45:15,147: Article Number Check Ran
+INFO: 2019-07-01 08:45:15,167: Gathered another Load File:
+INFO: 2019-07-01 08:45:15,168: //wfsrvgbco001003/Datasrv5/MPP/GlobalImageManagement/Datasheet Loading New/_to be loaded\Load Robert Jachowicz #999 28-Jun-19 16-12-20.xlsx
+INFO: 2019-07-01 08:45:15,184: Closed Previous COM Instance If on 2nd or above passthrough.
+INFO: 2019-07-01 08:45:17,399: Merger Ran
+INFO: 2019-07-01 08:45:17,429: Clean_Sort Ran
+INFO: 2019-07-01 08:45:17,438: Article Number Check Ran
+INFO: 2019-07-01 08:45:17,499: Gathered another Load File:
+INFO: 2019-07-01 08:45:17,500: //wfsrvgbco001003/Datasrv5/MPP/GlobalImageManagement/Datasheet Loading New/_to be loaded\Load Ryan Mackie #901 28-Jun-19 13-02-32.xlsx
+INFO: 2019-07-01 08:45:17,517: Closed Previous COM Instance If on 2nd or above passthrough.
+INFO: 2019-07-01 08:45:19,937: Merger Ran
+INFO: 2019-07-01 08:45:19,975: Clean_Sort Ran
+INFO: 2019-07-01 08:45:19,982: Article Number Check Ran
+INFO: 2019-07-01 08:45:20,010: Gathered another Load File:
+INFO: 2019-07-01 08:45:20,011: //wfsrvgbco001003/Datasrv5/MPP/GlobalImageManagement/Datasheet Loading New/_to be loaded\Load Ryan Mackie #901 28-Jun-19 13-00-09.xlsx
+INFO: 2019-07-01 08:45:20,029: Closed Previous COM Instance If on 2nd or above passthrough.
+INFO: 2019-07-01 08:45:22,750: Merger Ran
+INFO: 2019-07-01 08:45:22,802: Clean_Sort Ran
+INFO: 2019-07-01 08:45:22,809: Article Number Check Ran
+INFO: 2019-07-01 08:45:22,828: Gathered another Load File:
+INFO: 2019-07-01 08:45:22,829: //wfsrvgbco001003/Datasrv5/MPP/GlobalImageManagement/Datasheet Loading New/_to be loaded\Load Ryan Mackie #901 28-Jun-19 12-19-34.xlsx
+INFO: 2019-07-01 08:45:22,848: Closed Previous COM Instance If on 2nd or above passthrough.
+INFO: 2019-07-01 08:47:19,091: Log File Created
+INFO: 2019-07-01 08:47:19,143: Oldest File in to_be_loaded folder has been moved to Datasheet Loading:
+INFO: 2019-07-01 08:47:19,144: //wfsrvgbco001003/Datasrv5/MPP/GlobalImageManagement/Datasheet Loading New/_to be loaded\Load Robert Jachowicz #1001 28-Jun-19 16-17-19.xlsx
+INFO: 2019-07-01 08:48:53,097: Log File Created
+INFO: 2019-07-01 08:48:53,152: Oldest File in to_be_loaded folder has been moved to Datasheet Loading:
+INFO: 2019-07-01 08:48:53,153: //wfsrvgbco001003/Datasrv5/MPP/GlobalImageManagement/Datasheet Loading New/_to be loaded\Load Robert Jachowicz #1001 28-Jun-19 16-17-19.xlsx
+INFO: 2019-07-01 08:48:55,517: Merger Ran
+INFO: 2019-07-01 08:48:55,550: Clean_Sort Ran
+INFO: 2019-07-01 08:48:55,565: Article Number Check Ran
+INFO: 2019-07-01 08:48:55,655: Over 1000 Article Limit, removed offending load file
+INFO: 2019-07-01 08:48:55,677: Closed Previous COM Instance If on 2nd or above passthrough.
+INFO: 2019-07-01 08:48:58,312: Merger Ran
+INFO: 2019-07-01 08:48:58,334: Clean_Sort Ran
+INFO: 2019-07-01 08:51:23,096: Log File Created
+INFO: 2019-07-01 08:51:23,194: Oldest File in to_be_loaded folder has been moved to Datasheet Loading:
+INFO: 2019-07-01 08:51:23,194: //wfsrvgbco001003/Datasrv5/MPP/GlobalImageManagement/Datasheet Loading New/_to be loaded\Load Robert Jachowicz #1001 28-Jun-19 16-17-19.xlsx
+INFO: 2019-07-01 08:51:25,255: Merger Ran
+INFO: 2019-07-01 08:51:25,279: Clean_Sort Ran
+INFO: 2019-07-01 08:51:25,286: Article Number Check Ran
+INFO: 2019-07-01 08:51:25,295: Articles Found:
+INFO: 2019-07-01 08:51:25,296: 1001
+INFO: 2019-07-01 08:51:25,298: Moved any offending Load Files from /temp back to to_be_loaded
+INFO: 2019-07-01 08:51:26,472: SaveAs Ran
+INFO: 2019-07-01 08:51:26,486: Completed Load Folder Made
+INFO: 2019-07-01 08:51:26,493: Individual and Merged Load Files moved to Complete Folder
+INFO: 2019-07-01 08:51:26,501: Individual and Merged Load Files moved to Complete Folder
+INFO: 2019-07-01 08:51:26,532: Log File Moved to Completed Folder
