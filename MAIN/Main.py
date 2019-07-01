@@ -35,6 +35,7 @@ files = os.listdir(datasheetloading)
 
 for f in files:
         shutil.move(datasheetloading+'\\'+f, tobeloaded)
+logging.info("Files in Datasheet Loading moved to To_be_loaded if any.")
 
 #Pull Files from 'to_be_loaded' - oldest files first
 list_of_files = glob.glob(subtobeloaded)
@@ -60,21 +61,21 @@ while restart < 10:
                         xlsPath = os.path.expanduser('M:\GlobalImageManagement\Datasheet Loading New\Doc-Loader-Bot1\MAIN\Merge Spreadsheet.xlsm')
                         wb = xlApp.Workbooks.Open(Filename=xlsPath)
                         xlApp.Run('simpleXlsMerger')
-                        logging.info("Merger Ran")
+                        logging.info("Merger Macro Ran")
                         xlApp.Run('Clean_Sort')
-                        logging.info("Clean_Sort Ran")
+                        logging.info("Clean_Sort Macro Ran")
                         xlApp.Run('datavalidation')
-                        logging.info("Article Number Check Ran")
+                        logging.info("Article Number Check Macro Ran")
                 except:
                         xlApp = win32com.client.DispatchEx('Excel.Application')
                         xlsPath = os.path.expanduser('M:\GlobalImageManagement\Datasheet Loading New\Doc-Loader-Bot1\MAIN\Merge Spreadsheet.xlsm')
                         wb = xlApp.Workbooks.Open(Filename=xlsPath)
                         xlApp.Run('simpleXlsMerger')
-                        logging.info("Merger Ran")
+                        logging.info("Merger Macro Ran")
                         xlApp.Run('Clean_Sort')
-                        logging.info("Clean_Sort Ran")
+                        logging.info("Clean_Sort Macro Ran")
                         xlApp.Run('datavalidation')
-                        logging.info("Article Number Check Ran")
+                        logging.info("Article Number Check Macro Ran")
 
         except:
                 try:
@@ -84,13 +85,13 @@ while restart < 10:
                         logging.warning("Error: Excel Failure. Terminating Program.")
                         exit()
                 except:
-                        logging.warning("Error: Excel Failure. Terminating Program.")
+                        logging.warning("Error: Excel Failure.")
                         exit()
 
         #Check for <2000
         f=open("number.txt","r", encoding="utf-16")
         number=(f.read())
-        logging.info("Read Number")
+        logging.info("Reading Number of Articles...")
 
         #Stop Loop if under Article Limit
         if int(number) <1002:
@@ -102,6 +103,8 @@ while restart < 10:
                 else:
                     if len(os.listdir(tobeloaded) ) == 0:
                         logging.info("All Possible Load files Loaded")
+                        logging.info("Articles Found:")
+                        logging.info(number)
                         restart = 11
 
                     else:
@@ -109,7 +112,7 @@ while restart < 10:
                         oldest_file = min(list_of_files, key=os.path.getctime)
                         print (oldest_file)
                         shutil.move(oldest_file, datasheetloading)
-                        logging.info("Gathered another Load File:")
+                        logging.info("More Load Files to compile possible, gathered another Load File:")
                         logging.info(oldest_file)
             
 
@@ -129,18 +132,17 @@ while restart < 10:
 
 #Move Files from temp back to /to_be_loaded
 
-try:
-        source = r'\\wfsrvgbco001003\Datasrv5\MPP\GlobalImageManagement\Datasheet Loading New\temp'
-        dest3 = r'\\wfsrvgbco001003\Datasrv5\MPP\GlobalImageManagement\Datasheet Loading New\_to be loaded/'
 
-        files = os.listdir(source)
+source = r'\\wfsrvgbco001003\Datasrv5\MPP\GlobalImageManagement\Datasheet Loading New\temp'
+dest3 = r'\\wfsrvgbco001003\Datasrv5\MPP\GlobalImageManagement\Datasheet Loading New\_to be loaded/'
 
-        for f in files:
-                shutil.move(source+'\\'+f, dest3)
+files = os.listdir(source)
 
-        logging.info("Moved any offending Load Files from /temp back to to_be_loaded")
-except:
-        logging.info("Not Files to move from Temp")
+for f in files:
+        shutil.move(source+'\\'+f, dest3)
+
+logging.info("Moved any offending Load Files from /temp back to to_be_loaded")
+
 
 #Move Files to Completed New Folder
 try:
@@ -149,7 +151,8 @@ try:
 except:
     xlApp.Quit()
     del xlApp
-    logging.info("SaveAs Ran")
+    logging.info("SaveAs Macro Ran")
+    logging.info("COM Memory removed")
     date = datetime.today().strftime('%Y-%m-%d')
     dirname = completed+date+(" #1")
     dirname2 = completed+date+(" #2")
@@ -161,7 +164,8 @@ except:
 
         files = os.listdir(datasheetloading)
 
-        logging.info("Completed Load Folder Made")
+        logging.info("Completed Load Folder Made:")
+        logging.info(dirname)
 
         for f in files:
             shutil.move(datasheetloading+'\\'+f, dest4)
@@ -183,6 +187,7 @@ except:
         files = os.listdir(datasheetloading)
 
         logging.info("Completed Load Folder Made")
+        logging.info(dirname2)
 
         for f in files:
             shutil.move(datasheetloading+'\\'+f, dest4)
@@ -201,6 +206,7 @@ except:
         files = os.listdir(datasheetloading)
 
         logging.info("Completed Load Folder Made")
+        logging.info(dirname3)
 
         for f in files:
             shutil.move(datasheetloading+'\\'+f, dest4)
@@ -219,6 +225,7 @@ except:
         files = os.listdir(datasheetloading)
 
         logging.info("Completed Load Folder Made")
+        logging.info(dirname4)
 
         for f in files:
             shutil.move(datasheetloading+'\\'+f, dest4)
@@ -228,3 +235,5 @@ except:
 
         except:
             logging.info("Log File Moved to Completed Folder")
+
+logging.info("Program Ended Successfully")
