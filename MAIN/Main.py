@@ -32,8 +32,10 @@ except:
 
 #Create Log File
 logging.basicConfig(format='%(levelname)s: %(asctime)s: %(message)s', filename="Log", level=logging.INFO)
-logging.warning(removelogfile)
-logging.info("Log File Created")
+try:
+        logging.warning(removelogfile)
+except:
+        logging.info("Log File Created")
 
 #Move New Load Files into 'to_be_loaded'
 try:
@@ -73,7 +75,7 @@ while restart < 10:
                         del xlApp
                         logging.info("Closed Previous COM Instance If on 2nd or above passthrough.")
                         xlApp = win32com.client.DispatchEx('Excel.Application')
-                        xlsPath = os.path.expanduser('M:\GlobalImageManagement\Datasheet Loading New\Doc-Loader-Bot1\MAIN\Merge Spreadsheet.xlsm')
+                        xlsPath = os.path.expanduser('M:\GlobalImageManagement\Datasheet Loading New\Doc-Loader-Bot1\MAIN\Part-Manual-Merge.xls')
                         wb = xlApp.Workbooks.Open(Filename=xlsPath)
                         xlApp.Run('simpleXlsMerger')
                         logging.info("Merger Macro Ran")
@@ -83,7 +85,7 @@ while restart < 10:
                         logging.info("Article Number Check Macro Ran")
                 except:
                         xlApp = win32com.client.DispatchEx('Excel.Application')
-                        xlsPath = os.path.expanduser('M:\GlobalImageManagement\Datasheet Loading New\Doc-Loader-Bot1\MAIN\Merge Spreadsheet.xlsm')
+                        xlsPath = os.path.expanduser('M:\GlobalImageManagement\Datasheet Loading New\Doc-Loader-Bot1\MAIN\Part-Manual-Merge.xls')
                         wb = xlApp.Workbooks.Open(Filename=xlsPath)
                         xlApp.Run('simpleXlsMerger')
                         logging.info("Merger Macro Ran")
