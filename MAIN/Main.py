@@ -136,7 +136,9 @@ while restart < 10:
 
 
         else:
-                list_of_files = glob.glob(subdatasheetloading)
+                xlApp.Quit()
+                del xlApp
+                list_of_files = glob.glob(datasheetloading)
                 latest_file = max(list_of_files, key=os.path.getctime)
                 print (latest_file)
                 shutil.move(latest_file, temp)

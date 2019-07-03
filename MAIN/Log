@@ -1,19 +1,16 @@
-INFO: 2019-07-02 13:44:50,784: Log File Created
-INFO: 2019-07-02 13:44:50,811: Files in Datasheet Loading moved to To_be_loaded if any.
-INFO: 2019-07-02 13:44:50,990: Oldest File in to_be_loaded folder has been moved to Datasheet Loading:
-INFO: 2019-07-02 13:44:50,990: //wfsrvgbco001003/Datasrv5/MPP/GlobalImageManagement/Datasheet Loading New/_to be loaded\Load Robert Jachowicz #1001 27-Jun-19 16-19-18.xlsx
-INFO: 2019-07-02 13:44:53,441: Merger Macro Ran
-INFO: 2019-07-02 13:44:53,450: Clean_Sort Macro Ran
-INFO: 2019-07-02 13:44:53,456: Article Number Check Macro Ran
-INFO: 2019-07-02 13:44:53,464: Reading Number of Articles...
-INFO: 2019-07-02 13:44:53,464: Articles Found:
-INFO: 2019-07-02 13:44:53,465: 1001
-INFO: 2019-07-02 13:44:53,468: Moved any offending Load Files from /temp back to to_be_loaded
-INFO: 2019-07-02 13:44:55,905: SaveAs Macro Ran
-INFO: 2019-07-02 13:44:55,916: COM Memory removed
-INFO: 2019-07-02 13:44:55,934: Completed Load Folder Made
-INFO: 2019-07-02 13:44:55,938: \\wfsrvgbco001003\Datasrv5\MPP\GlobalImageManagement\Datasheet Loading New\Completed Load Files/2019-07-02 #3
-INFO: 2019-07-02 13:44:55,945: Individual and Merged Load Files moved to Complete Folder
-INFO: 2019-07-02 13:44:55,957: Individual and Merged Load Files moved to Complete Folder
-INFO: 2019-07-02 13:44:55,975: Log File Moved to Completed Folder
-INFO: 2019-07-02 13:44:55,985: Program Ended Successfully
+INFO: 2019-07-02 15:51:09,329: Log File Created
+INFO: 2019-07-02 15:51:09,351: Files in Datasheet Loading moved to To_be_loaded if any.
+INFO: 2019-07-02 15:51:09,453: Oldest File in to_be_loaded folder has been moved to Datasheet Loading:
+INFO: 2019-07-02 15:51:09,454: //wfsrvgbco001003/Datasrv5/MPP/GlobalImageManagement/Datasheet Loading New/_to be loaded\Load Ryan Mackie #1000 28-Jun-19 10-57-36.xlsx
+INFO: 2019-07-02 15:51:11,801: Merger Macro Ran
+INFO: 2019-07-02 15:51:11,810: Clean_Sort Macro Ran
+INFO: 2019-07-02 15:51:11,816: Article Number Check Macro Ran
+INFO: 2019-07-02 15:51:11,824: Reading Number of Articles...
+INFO: 2019-07-02 15:51:11,862: More Load Files to compile possible, gathered another Load File:
+INFO: 2019-07-02 15:51:11,863: //wfsrvgbco001003/Datasrv5/MPP/GlobalImageManagement/Datasheet Loading New/_to be loaded\Load Ryan Mackie #1001 28-Jun-19 11-01-13.xlsx
+INFO: 2019-07-02 15:51:11,879: Closed Previous COM Instance If on 2nd or above passthrough.
+INFO: 2019-07-02 15:51:14,331: Merger Macro Ran
+INFO: 2019-07-02 15:51:14,344: Clean_Sort Macro Ran
+INFO: 2019-07-02 15:51:14,351: Article Number Check Macro Ran
+INFO: 2019-07-02 15:51:14,354: Reading Number of Articles...
+INFO: 2019-07-02 15:51:14,401: Over 1000 Article Limit, removed offending load file
